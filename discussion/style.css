@@ -1,0 +1,38 @@
+* {
+	font-family: 'Press Start 2P', cursive;
+	font-family: 'Ysabeau', sans-serif;
+}
+
+#lp_head {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 3em;
+	padding-bottom: 2rem;
+}
+
+#lp_subtitles {
+	font-size: 2em;
+}
+
+#topnav{
+	background-color: skyblue;
+}
+
+#bgme{
+	background-color: skyblue;
+}
+
+#bgcontact{
+	background-color: skyblue;
+}
+
+.body{
+	background-color: skyblue;
+}
+
+#landing{
+	background-image: url(./images/bgclouds.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center;
+
+}
