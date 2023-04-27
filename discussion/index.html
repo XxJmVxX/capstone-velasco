@@ -11,13 +11,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ysabeau&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Indie+Flower&family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- external styling -->
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -27,21 +27,21 @@
 <body>
 
 	<!-- Navbar Section Start -->
-	<nav id="topnav" class="navbar navbar-expand-lg navbar-dark">
-	  <a class="navbar-brand" href="#">Baymax</a>
+	<nav id="bg" class="navbar fixed-top navbar-expand-lg navbar-dark">
+	  <a id="spacefont" class="navbar-brand" href="#landing">Baymax</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav ml-auto">
+	    <ul class="navbar-nav ml-auto h5">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+	        <a class="nav-link mx-3" href="#aboutme">About Me <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Gallery</a>
+	        <a class="nav-link mx-3" href="#gallery">Gallery</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact Us</a>
+	        <a class="nav-link mx-3" href="#contact">Contact Us</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -53,21 +53,20 @@
 		<div class="row ">
 			<!-- Side Content Section Start -->
 			<div class="col-xl-12 p-0">
-				<div class="container-fluid text-dark">
+				<div id="landing" class="container-fluid">
 
 					<!-- Landing Page Start -->
 
-					<section id="landing">
-					<div class="d-flex flex-lg-row flex-column py-5 align-items-center min-vh-100">
+					<section id="bglanding">
+					<div class="d-flex flex-lg-row flex-column py-5 justify-content-center align-items-center min-vh-100">
 
-						<div class="col-xl-6 p-0">
-							<img class="mt-5 mt-md-0 rounded-circle img-fluid" src="./images/bmprofile.webp" width="300">
+						<div class="col-xl-5 p-0">
+							<img class="mt-5 mt-md-0 rounded-circle img-fluid" src="./images/hiker.jpg" width="500">
 						</div>
 
-						<div class="col-xl-6 p-0 pt-3">
-							<h1 id="lp_head">Hi, I'm Baymax</h1>
-							<h3 id="lp_subtitles">Movie enthusiast, Food-Lover, Otaku at heart</h3>
-							<h3 id="lp_subtitles">Work, Eat, Sleep, Eat again</h3>
+						<div class="col-xl-5 p-0 pt-3 text-light">
+							<h1 class="lp_head">Hello explorer</h1>
+							<h3 id="lp_subtitles">Welcome to my portfolio, take a break and rest</h3>
 						</div>
 						
 					</div>
@@ -77,21 +76,17 @@
 
 					<!-- About Me Start -->
 
-					<section id="bgme" class="p-5">
-						<h1 id="lp_head">About Me</h1>
+					<section id="bg" class="p-5">
+						<h1 id="aboutme" class="lp_head">About Me</h1>
 
-						<img class="mt-5 mt-md-0 rounded-circle" src="./images/me.jpg" width="250">
-						<h1>John Michael Velasco</h1>
-						<h3>Self-proclaimed Reality-hater</h3>
+						<img class="my-5 mt-md-0 rounded-circle" src="./images/me.jpg" width="300">
+						<h1 class="font-weight-bold py-5">John Michael Velasco</h1>
+						<h3 class="font-italic">Future Developer & Explorer-wannabe</h3>
 
 						<div class="row">
-							<div class="offset-md-2 col-md-8">
-								<p>
-									Hello, for those who lost their way into my portfolio, bad luck for you, cause you will spend your precious time reading this nonsensical paragraph that I should say about me (but I wish I didn't because if you know too much about me, I'll be forced to put you on my watchlist -_-)
-								</p>
-
-								<p>
-									So, for starters. I enjoy movies, specially those with fantastical lores and backgrounds about them. I am a fan of Dungeons and Dragons, though I really don't know how to play it. Let's just say I am a fan when the topic or subject includes fantasy, myth, legends, or any supernatural lores. I am in love with the worlds between the books, pages and behind the screens. It is my way of escaping our reality and go into a world where I can be who I want myself to be.
+							<div class="pt-5 offset-md-2 col-md-8">
+								<p class="fontsize">
+									Hello weary explorer, I would like to introduce myself. You can call me Jey-Em, and I use "Baymax" when interacting with people thru the games and virtual communities, coming from everyone's favorite healthcare companion, and it sounds techno but cute.
 								</p>
 							</div>
 						</div>
@@ -103,64 +98,49 @@
 
 					<div id="bggallery" class="container-fluid p-5">
 
-						<h1 id="lp_head">Gallery</h1>
+						<h1 id="gallery" class="lp_head">Gallery</h1>
 						
 						<div class="row justify-content-center">
-							<div class="column col-xl-3 p-0 card mb-3 align-items-center mx-3">
-							  <img src="./images/book.jpg" class="w-75 card-img-top" alt="...">
+
+							<div class="column col-xl-5 p-0 card mb-3 align-items-center mx-3">
+							  <img src="./images/airplane.jpg" class="w-75 card-img-top" alt="...">
 							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							    <h5 class="card-title">Travel</h5>
+							    <p class="card-text">I like to explore new places and revisit memorable places. I believe each town, place, house or nature spots has a story to tell</p>
+							    <p class="card-text"><small class="text-muted">Last updated 7 months ago</small></p>
 							  </div>
 							</div>
 
-							<div class="column col-xl-3 p-0 card mb-3 align-items-center mx-3">
-							  <img src="./images/food.jpg" class="w-75 card-img-top" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							  </div>
-							</div>
-
-							<div class="column col-xl-3 p-0 card mb-3 align-items-center mx-3">
+							<div class="column col-xl-5 p-0 card mb-3 align-items-center mx-3">
 							  <img src="./images/souvenirs.jpg" class="w-75 card-img-top" alt="...">
 							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							    <h5 class="card-title">Souvenirs</h5>
+							    <p class="card-text">Souvenirs tells much about the culture of the place I visited, but just be mindful of the grand stories that came with the things, sometimes its just to keep the price going up haha</p>
+							    <p class="card-text"><small class="text-muted">Last updated 7 months ago</small></p>
 							  </div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="column col-xl-3 p-0 card mb-3 align-items-center mx-3">
-							  <img src="./images/airplane.jpg" class="w-75 card-img-top" alt="...">
+							<div class="column col-xl-5 p-0 card mb-3 align-items-center mx-3">
+							  <img src="./images/food.jpg" class="w-75 card-img-top" alt="...">
 							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							    <h5 class="card-title">Food</h5>
+							    <p class="card-text">Food is part of every culture whatever place or town you visit, be it new, traditional, local or not. Food is a thing people can enjoy altogether</p>
+							    <p class="card-text"><small class="text-muted">Last updated 7 months ago</small></p>
 							  </div>
 							</div>
 
-							<div class="column col-xl-3 p-0 card mb-3 align-items-center mx-3">
+							<div class="column col-xl-5 p-0 card mb-3 align-items-center mx-3">
 							  <img src="./images/water.jpg" class="w-75 card-img-top" alt="...">
 							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							    <h5 class="card-title">Explore</h5>
+							    <p class="card-text">Swimming on the beaches, hiking up the mountains, or just going on a roadtrip, what matters is the journey we experienced.</p>
 							    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 							  </div>
 							</div>
 
-							<div class="column col-xl-3 p-0 card mb-3 align-items-center mx-3">
-							  <img src="./images/weather.jpg" class="w-75 card-img-top" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							  </div>
-							</div>
+						
 						</div>
 
 					</div>
@@ -169,61 +149,85 @@
 
 					<!-- Contact Me Start -->
 
-					<div id="bgcontact" class="d-lg-flex justify-content-center p-3 row">
-						<div class="card col-xl-6 col-md-6 col-sm-12 mb-5 mb-xl-1 p-3">
+					<div id="bg" class="column d-lg-flex justify-content-center p-3 row">
 
-							<div class="column col-12">
-							<h2>Message Me</h2>
-
-							<form >
-
-							  <div class="form-group">
-							    <label for="formGroupExampleInput">Name</label>
-							    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
-							  </div>
-
-							  <div class="form-group">
-							    <label for="formGroupExampleInput">Email Address</label>
-							    <input type="email" class="form-control" id="formGroupExampleInput" placeholder="name@example.com">
-							  </div>
-
-							  <div class="form-group">
-							      <label for="exampleFormControlTextarea1">Message</label>
-							      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-							  </div>
-
-							  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#sendemail">Send Email</button>
-							</form>
-							</div>
+						<div class="column col-12">
+							
+							<h1 id="contact" class="lp_head row justify-content-center">Contact Me</h1>
 
 						</div>
-						<div class="card col-xl-6 col-md-6 col-sm-12 mb-5 mb-xl-1 p-3">
 
-							<div class="column col-12">
-							<h2>Visit Me</h2>
+						<!-- Brand Link Start -->
 
-							<form >
-
-							  <div class="form-group">
-							    <label for="formGroupExampleInput">Name</label>
-							    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
-							  </div>
-
-							  <div class="form-group">
-							    <label for="formGroupExampleInput">Email Address</label>
-							    <input type="email" class="form-control" id="formGroupExampleInput" placeholder="name@example.com">
-							  </div>
-
-							  <div class="form-group">
-							      <label for="exampleFormControlTextarea1">Message</label>
-							      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-							  </div>
-
-							  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#sendemail">Send Email</button>
-							</form>
+						<div class="column col-12 mt-5 row justify-content-center">
+							<div class="col-3 col-md-1">
+								<a href="https://www.facebook.com/johnmichael.velasco.7/" target="_blank" id="facebook">
+									<i class="fa fa-facebook-square"></i>
+								</a>
 							</div>
 
-						</div>				
+							<div class="col-3 col-md-1">
+								<a href="https://www.linkedin.com/in/jm-velasco-22a052269/" target="_blank" id="linkedin">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</div>
+
+							<div class="col-3 col-md-1">
+								<a href="https://gitlab.com/batch281-velasco" target="_blank" id="gitlab">
+									<i class="fa fa-gitlab"></i>
+								</a>
+							</div>
+
+							<div class="col-3 col-md-1">
+								<a href="https://github.com/XxJmVxX" target="_blank" id="github">
+									<i class="fa fa-github"></i>
+								</a>
+							</div>						
+						</div>
+
+						<!-- Brand Link End -->			
+
+						<!-- Contact Me Start -->
+
+						<div class="container-fluid">
+							<div class="row">
+								<div class="mt-5 card col-xl-6 col-md-12 col-sm-12 mb-xl-1 p-2">
+									<div class="column col-12 text-dark">
+									<h2>Visit Me</h2>
+										<div class="container-fluid">
+										    <div class="map-responsive">
+										   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15465.008631221248!2d120.86370696316423!3d14.296776371697902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962aa0f888057b%3A0x9f21284576d93f7b!2sOsorio%2C%20Trece%20Martires%2C%20Cavite!5e0!3m2!1sen!2sph!4v1682625785674!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mt-5 card col-xl-6 col-md-12 col-sm-12 mb-xl-1 p-2">
+									<div class="column col-xl-12 text-dark">
+									<h2>Message Me</h2>
+										<form >
+										  <div class="form-group">
+										    <label for="formGroupExampleInput">Name</label>
+										    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+										  </div>
+										  <div class="form-group">
+										    <label for="formGroupExampleInput">Email Address</label>
+										    <input type="email" class="form-control" id="formGroupExampleInput" placeholder="name@example.com">
+										  </div>
+										  <div class="form-group">
+										      <label for="exampleFormControlTextarea1">Message</label>
+										      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+										  </div>
+										  <button type="submit" class="btn btn-dark" data-target="#sendemail">Send</button>
+										</form>
+									</div>
+
+								</div>
+							</div>							
+						</div>
+
+						<!-- Contact Me End -->
+
 					</div>
 
 

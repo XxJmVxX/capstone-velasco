@@ -1,38 +1,56 @@
 * {
-	font-family: 'Press Start 2P', cursive;
-	font-family: 'Ysabeau', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
 }
 
-#lp_head {
-	font-family: 'Press Start 2P', cursive;
+.lp_head {
+	font-family: 'Bruno Ace SC', cursive;
 	font-size: 3em;
 	padding-bottom: 2rem;
+}
+
+#spacefont {
+	font-family: 'Bruno Ace SC', cursive;
+	font-size: 2em;
 }
 
 #lp_subtitles {
 	font-size: 2em;
 }
 
-#topnav{
-	background-color: skyblue;
-}
 
-#bgme{
-	background-color: skyblue;
-}
-
-#bgcontact{
-	background-color: skyblue;
+#bg{
+	background-color: #00154d;
+	color: white;
 }
 
 .body{
-	background-color: skyblue;
+	background-color: #00154d;
 }
 
-#landing{
-	background-image: url(./images/bgclouds.jpg);
+#bglanding{
+	background-image: url(./images/space.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;	
 	background-position: center;
 
+}
+
+.fa{
+	font-size:36px;
+	color: white;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
